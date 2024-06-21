@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
+:root {
+  --black: #222831;
+  --scnd-color: #00adb5;
+  --thrd-color: #eeeeee;
+  --hover1-color: #292d35;
+  --hover2-color: #97ddec;
+  --title-font: "Krona One", sans-serif;
+  --text-font: "Montserrat", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,12 +17,12 @@
 
 body {
   box-sizing: border-box;
-  background-color: #000000;
-  color: #f6f6f6;
+  background-color: var(--black);
+  color: var(--thrd-color);
 }
 
 .titulo-destaque {
-  color: #22d4fd;
+  color: var(--scnd-color);
 }
 
 .apresentacao {
@@ -31,12 +41,12 @@ body {
 
 .apresentacao__conteudo__titulo {
   font-size: 36px;
-  font-family: "Krona One", sans-serif;
+  font-family: var(--title-font);
 }
 
 .apresentacao__conteudo__texto {
   font-size: 24px;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--text-font);
   font-weight: 400;
 }
 
@@ -49,7 +59,7 @@ body {
 }
 
 .apresentacao__links__subtitulo {
-  font-family: "Krona One", sans-serif;
+  font-family: var(--title-font);
   font-weight: 400;
   font-size: 24px;
 }
@@ -58,7 +68,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 16px;
-  border: 2px solid #22d4fd;
+  border: 2px solid var(--scnd-color);
   width: 378px;
   text-align: center;
   border-radius: 8px;
@@ -66,21 +76,21 @@ body {
   font-weight: 600;
   padding: 21.5px 0;
   text-decoration: none;
-  color: #f6f6f6;
-  font-family: "Montserrat", sans-serif;
+  color: var(--thrd-color);
+  font-family: var(--text-font);
 }
 
 .apresentacao__links__link:hover {
   cursor: pointer;
-  background-color: #272727;
+  background-color: var(--hover1-color);
 }
 
 .footer {
   padding: 23.64px;
-  background-color: #22d4fd;
-  color: #000000;
+  background-color: var(--scnd-color);
+  color: var(--black);
   text-align: center;
-  font-family: "Monserrat", sans-serif;
+  font-family: var(--text-font);
   font-size: 24px;
   font-weight: 400;
 }
@@ -95,8 +105,24 @@ body {
 }
 
 .header__menu__link {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--text-font);
   font-size: 24px;
   font-weight: 600;
-  color: #22d4fd;
+  color: var(--scnd-color);
+  text-decoration: none;
+}
+
+.header__menu__link:hover {
+  cursor: pointer;
+  color: var(--hover2-color);
+}
+
+.apresentacao__conteudo__texto a {
+  text-decoration: none;
+  color: var(--scnd-color);
+}
+
+.apresentacao__conteudo__texto a:hover {
+  cursor: pointer;
+  color: var(--hover2-color);
 }
