@@ -30,22 +30,23 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 5% 15%;
+  gap: 82px;
 }
 
 .apresentacao__conteudo {
-  width: 615px;
+  width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 2.5rem;
 }
 
 .apresentacao__conteudo__titulo {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-family: var(--title-font);
 }
 
 .apresentacao__conteudo__texto {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-family: var(--text-font);
   font-weight: 400;
 }
@@ -55,43 +56,47 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: 32px;
+  gap: 2rem;
 }
 
 .apresentacao__links__subtitulo {
   font-family: var(--title-font);
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
-.apresentacao__links__link {
+.apresentacao__links__navegacao {
   display: flex;
   justify-content: center;
-  gap: 16px;
-  border: 2px solid var(--scnd-color);
-  width: 378px;
+  gap: 1rem;
+  border: 0.125rem solid var(--scnd-color);
+  width: 50%;
   text-align: center;
-  border-radius: 8px;
-  font-size: 24px;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
   font-weight: 600;
-  padding: 21.5px 0;
+  padding: 1.34rem 0;
   text-decoration: none;
   color: var(--thrd-color);
   font-family: var(--text-font);
 }
 
-.apresentacao__links__link:hover {
+.apresentacao__links__navegacao:hover {
   cursor: pointer;
   background-color: var(--hover1-color);
 }
 
+.apresentacao__imagem {
+  width: 50%;
+}
+
 .footer {
-  padding: 23.64px;
+  padding: 1.5rem;
   background-color: var(--scnd-color);
   color: var(--black);
   text-align: center;
   font-family: var(--text-font);
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
@@ -101,12 +106,12 @@ body {
 
 .header__menu {
   display: flex;
-  gap: 80px;
+  gap: 5rem;
 }
 
 .header__menu__link {
   font-family: var(--text-font);
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
   color: var(--scnd-color);
   text-decoration: none;
@@ -125,4 +130,23 @@ body {
 .apresentacao__conteudo__texto a:hover {
   cursor: pointer;
   color: var(--hover2-color);
+}
+
+@media (max-width: 1200px) {
+  .header {
+    padding: 5%;
+  }
+
+  .header__menu {
+    justify-content: center;
+  }
+
+  .apresentacao {
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
+
+  .apresentacao__conteudo {
+    width: auto;
+  }
 }
